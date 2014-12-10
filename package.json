@@ -1,0 +1,58 @@
+{
+  "name": "airlines_logos",
+  "version": "0.0.1",
+  "description": "Airlines LOGOS",
+  "main": ".bin/www",
+  "scripts": {
+    "test": ""
+  },
+  "keywords": [
+    "airlines",
+    "logos"
+  ],
+  "author": "rey guerra",
+  "license": "MIT",
+  "devDependencies": {
+    "backbone": "^1.1.2",
+    "browserify": "^7.0.0",
+    "browserify-shim": "^3.8.1",
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^3.2.1",
+    "grunt-contrib-compass": "^1.0.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-download": "^0.2.0",
+    "grunt-react": "^0.10.0",
+    "jquery": "^2.1.1",
+    "react": "^0.12.1",
+    "underscore": "^1.7.0"
+  },
+  "dependencies": {
+    "body-parser": "~1.0.0",
+    "cookie-parser": "~1.0.1",
+    "debug": "~0.7.4",
+    "directory-tree": "^0.1.1",
+    "download": "^3.1.2",
+    "download-status": "^2.1.0",
+    "express": "~4.2.0",
+    "express-handlebars": "^1.1.0",
+    "morgan": "~1.0.0",
+    "static-favicon": "~1.0.0"
+  },
+  "browser": {
+    "jquery": "./node_modules/jquery/dist/jquery.js",
+    "underscore": "./node_modules/underscore/underscore.js",
+    "backbone": "./node_modules/backbone/backbone.js",
+    "react": "./node_modules/react/dist/react-with-addons.js"
+  },
+  "browserify-shim": {
+    "jquery": "$",
+    "underscore": "_",
+    "backbone": "Backbone",
+    "react": "React"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  }
+}
